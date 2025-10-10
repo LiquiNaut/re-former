@@ -1,0 +1,20 @@
+<%= form_tag(users_path) do %>
+  <div class="field">
+    <%= label_tag(:username, "Username") %><br>
+    <%= text_field_tag("user[username]") %>
+  </div>
+
+  <div class="field">
+    <%= label_tag(:email, "Email") %><br>
+    <%= email_field_tag("user[email]") %>
+  </div>
+
+  <div class="field">
+    <%= label_tag(:password, "Password") %><br>
+    <%= password_field_tag("user[password]") %>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag("Create User") %>
+  </div>
+<% end %>
